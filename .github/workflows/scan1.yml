@@ -11,6 +11,10 @@ jobs:
     name: Xygeni Scan
     runs-on: ubuntu-latest
     steps:
+      - name: Set Xygeni env 
+        run: |
+            date
+            exit 1
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0  # Shallow clones should be disabled for better relevancy of analysis
